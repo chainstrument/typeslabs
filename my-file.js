@@ -1,0 +1,11 @@
+var age = 10;
+function addition(x, y) {
+    return x + y;
+}
+var result = addition(10, 20);
+console.log(result);
+function sayHello(target) {
+    return "Hello ".concat(target.firstName, ", you have ").concat(target.money, " on your account.");
+}
+var message = sayHello({ firstName: "John", money: 123 });
+console.log(message);

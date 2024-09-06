@@ -9,3 +9,14 @@ function sayHello(target) {
 }
 var message = sayHello({ firstName: "John", money: 123 });
 console.log(message);
+function checkAge(ageToCheck) {
+    /** */
+}
+var lotOfMoney = 50000;
+checkAge(lotOfMoney);
+var code1 = "123";
+var code2 = 456;
+var monAge = 50;
+function fightCreature(taget) { }
+fightCreature('dragon');
+fightCreature('grenouille');

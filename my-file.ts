@@ -15,3 +15,36 @@ function sayHello(target: {firstName: string, money: number}){
 const message: string = sayHello({firstName: "John", money: 123});
 
 console.log(message);
+
+/** Type  */
+
+type Money = number;
+type Age = number;
+
+function checkAge(ageToCheck: Age) {
+/** */
+}
+
+const lotOfMoney: Money = 50000;
+
+checkAge(lotOfMoney); 
+
+
+type CodeSecret = string | number;
+
+const code1: CodeSecret = "123";
+
+const code2: CodeSecret = 456;
+
+/** autorisation de variable en tant que type */
+
+type AgeMin = 50; 
+
+const monAge: AgeMin = 50;
+
+type Creature = 'blob' | 'dragon' | 'unicorn';
+
+function fightCreature(taget: Creature) {}
+
+fightCreature('dragon');
+fightCreature('grenouille'); // ça ne passe pas, ce n'est pas une creature

@@ -24,3 +24,14 @@ function reDamage(hero) {
 }
 //type MyArrayOfNumbers = Array<number>; //equivalent
 var arrayOk = [1, 2, 3];
+/** generic function */
+function createShop(name, owner, items) {
+    return {
+        name: name,
+        owner: owner,
+        items: items
+    };
+}
+//appel de la fonction generique 
+var armory = createShop("My Armory", { name: "bob", life: 100,
+    attack: 1, defense: 2 }, []);

@@ -102,3 +102,28 @@ type Armory = Shop & {
     items: Array<Equipment>;
 }
 
+/** Type generique   */
+
+type GenShop<ItemType> = {
+    name: string;
+    owner: Character
+    items: Array<ItemType>;
+} 
+
+type GenArmory = GenShop<Equipment>;
+type GenPetShop = GenShop<Pet>; 
+
+/** generic function */
+
+function createShop<T>(name: string, owner: Character, items: Array<T>): GenShop<T> {
+    return {
+        name,
+        owner,
+        items
+    }
+}
+
+//appel de la fonction generique 
+
+const armory = createShop<Equipment>("My Armory", {name : "bob", life: 100, 
+    attack:1, defense:2}, []);

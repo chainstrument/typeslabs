@@ -22,5 +22,5 @@ fightCreature('dragon');
 function reDamage(hero) {
     hero.life = hero.life - 10;
 }
+//type MyArrayOfNumbers = Array<number>; //equivalent
 var arrayOk = [1, 2, 3];
-//const arrayNok: MyArrayOfNumbers = [1, 2, "3"]; //Array not ok

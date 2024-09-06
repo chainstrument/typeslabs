@@ -83,3 +83,22 @@ type MyArrayOfNumbers = Number[];
 const arrayOk: MyArrayOfNumbers = [1, 2, 3];
 
 //const arrayNok: MyArrayOfNumbers = [1, 2, "3"]; //Array not ok
+
+/** Le type unknown */
+
+type Shop  = {
+    name: string;
+    owner: Character
+    items: Array<unknown>;
+}
+
+type Equipment = {
+    price: number;
+    attack?: number;
+    defense?: number;
+} 
+
+type Armory = Shop & {
+    items: Array<Equipment>;
+}
+

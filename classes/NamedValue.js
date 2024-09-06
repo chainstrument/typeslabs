@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var NamedValue = /** @class */ (function () {
+    function NamedValue(name) {
+        this.name = name;
+    }
+    NamedValue.prototype.setValue = function (value) {
+        this._value = value;
+    };
+    NamedValue.prototype.getValue = function () {
+        return this._value;
+    };
+    NamedValue.prototype.toString = function () {
+        return "".concat(this.name, ": ").concat(this._value);
+    };
+    return NamedValue;
+}());
+exports.default = NamedValue;

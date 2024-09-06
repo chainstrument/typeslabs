@@ -19,4 +19,6 @@ var code2 = 456;
 var monAge = 50;
 function fightCreature(taget) { }
 fightCreature('dragon');
-fightCreature('grenouille');
+function reDamage(hero) {
+    hero.life = hero.life - 10;
+}

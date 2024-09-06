@@ -47,4 +47,30 @@ type Creature = 'blob' | 'dragon' | 'unicorn';
 function fightCreature(taget: Creature) {}
 
 fightCreature('dragon');
-fightCreature('grenouille'); // ça ne passe pas, ce n'est pas une creature
+//fightCreature('grenouille'); // ça ne passe pas, ce n'est pas une creature
+
+/** Typer un objet */
+
+type Hero = {
+    life: number
+}
+
+function reDamage(hero: Hero) {
+    hero.life = hero.life - 10;
+} 
+
+/** Definition de type d'objet a l'aide d'une interface */
+
+interface Character {
+    name: string;
+    life: number;
+    attack: number;
+    defense: number;
+}
+
+type Pet = Character;
+
+interface MyHero extends Character {
+    pet?: Pet;
+
+}

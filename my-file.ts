@@ -74,3 +74,12 @@ interface MyHero extends Character {
     pet?: Pet;
 
 }
+
+/** Type des elements d'un tableau */
+
+type MyArrayOfNumbers = Number[]; 
+//type MyArrayOfNumbers = Array<number>; //equivalent
+
+const arrayOk: MyArrayOfNumbers = [1, 2, 3];
+
+//const arrayNok: MyArrayOfNumbers = [1, 2, "3"]; //Array not ok
